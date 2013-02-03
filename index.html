@@ -2,7 +2,19 @@
 <html lang="en">
 <head>
   <title>Uasabi.com</title>
-  <link rel="stylesheet" href="style.css">
+  <style type="text/css" media="screen">
+    .logo {
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      background: url(images/uasabi.png) right no-repeat;
+      height: 81px;
+      width: 365px;
+      position: absolute;
+      bottom: 3%;
+      right: 3%;
+    }
+  </style>
   <link rel="stylesheet" href="css/jquery.vegas.css" type="text/css" media="screen" charset="utf-8">
 </head>
 <body>
@@ -11,6 +23,12 @@
   </div>
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
   <script type="text/javascript" src="js/jquery.vegas.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript">
+    $( function() {
+      $.vegas({
+        src:'images/background.gif'
+      });
+    });
+  </script>
 </body>
 </html>
